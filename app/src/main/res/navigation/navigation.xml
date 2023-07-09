@@ -1,0 +1,20 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/addFragment">
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.ervr.checkingapp.views.AddFragment"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@+id/listFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.ervr.checkingapp.views.ListFragment"
+        tools:layout="@layout/fragment_list" />
+</navigation>
